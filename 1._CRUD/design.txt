@@ -1,0 +1,13 @@
+/<collection>: cats
+
+
+// What HTTP methods and in what order do we want to use them?
+
+GET /cats 
+GET /cats/id
+
+POST /cats
+
+PATCH /cats/id
+
+DELETE /cats/id
