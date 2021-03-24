@@ -96,12 +96,13 @@
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="card-title">Hvordan man installerer Express</h3>
+                                <h3 class="card-title">Hvordan man opretter en package.json fil</h3>
                                 <p class="card-text">
                                     <ol>
-                                       <li>Gå ind i din foretrukne terminal og skriv flg: node -v</li>
-                                       <li>Hvorefter den sender NodeJS versionen tilbage, hvis den er installeret</li>
-                                       <li><img src="/public/assets/img/Test_af_NodeJS_version.png"</li>
+                                       <li>Man kan enten højre-klikke på sin projektmappe, klikke "new file" og navngive den nye fil: package.json</li>
+                                       <li>Man kan bruge terminalen: Her skal man først cd ind i sin projektmappe, hvorefter man kan skrive: run npm init.</li>
+                                       <li>Herefter bliver der oprettet en fil ved navn "package.json"</li>
+                                       <li></br></li>
                             </div>
                           </div>
                         </div>
@@ -115,15 +116,16 @@
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Hvad er npm?</h5>
+                              <h5 class="card-title">Dependency: Express</h5>
                               <p class="card-text">
                                   <ol>
-                                    <li>Det er et online repository til at publicering af open-source Node</a></li>
-                                    <li>Det er et kommandolinjeværktøj til interaktion med dette repository, der hjælper med pakkeinstallation, versionstyring og afhængighedsstyring</li>
-                                    <li>Det bliver installeret, når man installerer NodeJS</li>
-                                    <li>Man kan teste, om den er der ved at skrive flg. i terminalen: npm -v</li>
-                                    <li>Hvorefter den sender npm versionen tilbage</li>
-                                    <li><img src="/public/assets/img/Test_af_Npm_version.png"</li>
+                                    <li>I sin package.jsn fil skriver man: “dependencies”:
+                                    <li><img src="/public/assets/img/Dependency_Express.png"></li>
+                                    <li>En package.json fil er ikke en brugbar fil, før man har skrevet: {}</li>li>
+                                    <li>Inde i {} skriver man så sine dependencies og scripts</li>
+                                    <li>Dependencies er et key-value pair, hvor Dependencies er nøglen, og “express”: “^4.17.1” er værdien.</li>
+                                    <li>^ foran værdien betyder at man kan bruge denne version eller nyere.</li>
+                                    
                                   </Ol>
                             </div>
                           </div>
