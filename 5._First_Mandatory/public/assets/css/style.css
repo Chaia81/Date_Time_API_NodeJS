@@ -49,11 +49,11 @@ table {
 	border-spacing: 0;
 }*/
 
-.container{
+.container {
     max-width: 1320px;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     margin-right: 1rem;
@@ -62,7 +62,7 @@ table {
     white-space: nowrap;
 }
 
-span{
+span {
     padding: .3125rem 0 .3125rem 0;
     margin: 0 1rem 0 0;
     font-size: 1.25rem;
@@ -93,31 +93,38 @@ span{
     padding-bottom: 1rem !important;
 }
 
-.mt-auto{
+.mt-auto {
     margin-top: auto !important;
 }
 
-.py-3{
+.py-3 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
 }
 
-.bg-light{
+.bg-light {
     background-color: #f8f9fa !important;
 }
 
 
-.card-header{
+.card-header {
     background-color: #25BD62;
     color: #000000;
     font-weight: bolder;
     text-align: center;
 }
 
-.card-body{
+.card-body {
     background-color: #B6E9CA;
     color: #000000;
 }
+
+
+/*
+div.col-md-4, div.col-md-8 {
+    height: 25px;;
+}
+*/
 
 /*
 .card-title{
@@ -141,4 +148,5 @@ footer.bg-light{
 	font: inherit;
 	vertical-align: baseline;
     background-color: #25BD62 !important;
+    color: black
 }

@@ -34,8 +34,8 @@
                         <div class="navbar-nav">
                             <a class="nav-link" href="/">Home</a>
                             <a class="nav-link" href="/nodejs.html">NodeJS</a>
-                            <a class="nav-link active" aria-current="page" href="/5._First_Mandatory/public/tools.html">Tools</a>
-                            <a class="nav-link" href="#">Pricing</a>
+                            <!-- <a class="nav-link" href="/tools.html">Tools</a> -->
+                            <a class="nav-link active" aria-current="page" href="/dependencies.html">Dependencies</a>
                             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                         </div>
                    </div>
@@ -47,16 +47,12 @@
         <!-------------------- Page content -------------------->
 
         <div class="container_inner container-sm">
-            <h1 class="welcome">Welcome to my other personal page</h1>
-        </div>
-
-        <div class="container_inner container-sm">
 
             <section class="py-5 text-center container">
                 <div class="row py-lg-5">
                     <div class="col-lg-6 col-md-8 mx-auto">
-                        <h1 class="fw-light">Album example</h1>
-                            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                        <h1 class="fw-light">Dependencies</h1>
+                            <p class="lead text-muted">Dependencies bliver skrevet i package.json filen, som indeholder en samling af et projekts dependencies. Disse dependencies er de moduler, som projektet er afhængig af for at fungere korrekt.</p>
                             <!-- <p>
                             <a href="#" class="btn btn-primary my-2">Main call to action</a>
                             <a href="#" class="btn btn-secondary my-2">Secondary action</a>
@@ -75,8 +71,17 @@
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h3 class="card-title">Card title</h3>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <h3 class="card-title">package.json filen</h3>
+                              <p class="card-text">
+                                  <ol>
+                                     <li>Ethvert projekt, som bruger NodeJs, vil få brug for en package.json fil, hvori der bl.a. står de dependencies og scripts, som projektet har brug for, for at kunne køre.</li>
+                                     <li>Dependencies som vi har lært at bruge:</li>
+                                     <li>Express</li>
+                                     <li>DevDependencies</li>
+                                     <li></br></li>
+                                     <li></br></li>
+                                  </Ol>
+                                </p>
                               <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
                             </div>
                           </div>
@@ -91,9 +96,12 @@
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <h3 class="card-title">Hvordan man installerer Express</h3>
+                                <p class="card-text">
+                                    <ol>
+                                       <li>Gå ind i din foretrukne terminal og skriv flg: node -v</li>
+                                       <li>Hvorefter den sender NodeJS versionen tilbage, hvis den er installeret</li>
+                                       <li><img src="/public/assets/img/Test_af_NodeJS_version.png"</li>
                             </div>
                           </div>
                         </div>
@@ -107,9 +115,16 @@
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              <h5 class="card-title">Hvad er npm?</h5>
+                              <p class="card-text">
+                                  <ol>
+                                    <li>Det er et online repository til at publicering af open-source Node</a></li>
+                                    <li>Det er et kommandolinjeværktøj til interaktion med dette repository, der hjælper med pakkeinstallation, versionstyring og afhængighedsstyring</li>
+                                    <li>Det bliver installeret, når man installerer NodeJS</li>
+                                    <li>Man kan teste, om den er der ved at skrive flg. i terminalen: npm -v</li>
+                                    <li>Hvorefter den sender npm versionen tilbage</li>
+                                    <li><img src="/public/assets/img/Test_af_Npm_version.png"</li>
+                                  </Ol>
                             </div>
                           </div>
                         </div>
