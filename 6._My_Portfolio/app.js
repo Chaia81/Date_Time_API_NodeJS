@@ -15,6 +15,8 @@ app.get("/", (req, res) => {
 });
 
 
+/* Create and serve the projects page with nav and footer */
+
 
 
 
@@ -31,12 +33,3 @@ const server = app.listen(process.env.PORT || 8080, (error) => {
     }
     console.log("Server is running on port", 8080);
 });
-
-/*
-app.listen(8080, (error) => {
-    if (error) {
-        console.log(error);
-    }
-    console.log("Server is running on port", 8080);
-});
-*/

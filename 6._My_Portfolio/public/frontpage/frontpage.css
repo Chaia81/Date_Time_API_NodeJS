@@ -1,37 +1,66 @@
 body {
-     background-color: lightgrey;
+     background-color: #E9E9E9;
+     /* background-color: #C0A45B; */
 }
 
 .container_inner {
      /* display: flex; */
      max-width: 1320px;
-     background-color: pink;
+     /* background-color: #D9C2BD; */
+     background-color: #ECDADC;
+     /*background-color: hotpink; */
+}
+
+/* ---------------------------------- Navigation ---------------------------------- */
+
+nav {
+     background-color: #231F20;
 }
 
 .navbar {
-     color: blanchedalmond;
+     /* color: blanchedalmond; */
      width: 100%;
+     /* display: flexbox; */
 }
 
 .name {
      font-weight: bolder;
      font-size: large;
-     color: gold;
-     /*color: goldenrod; */
+     color: #C0A45B;
 }
+
+/*
+#navbarNavAltMarkup {
+     display: flex;
+     justify-content: left;
+}
+*/
 
 #navbarNavAltMarkup .navbar-nav .nav-link {
-     /* text-align: center; */
-     color: blanchedalmond;
-     /* float: center; */
+     color: #E9E9E9;
+     /* color: #A2C4C6; */
+
 }
 
-footer.bg-light{
-     /*margin: 0;
-     padding: 0;
-     border: 0;*/
-     font-size: 100%;
-     font: inherit;
-     color: black;
-     vertical-align: baseline;
+
+/* --------------------------------- Main content --------------------------------- */
+
+#main-content {
+     min-height: calc(100vh - 153px);
+}
+
+
+
+
+
+/* ------------------------------------ Footer ------------------------------------ */
+
+footer.footer {
+     background-color: #E2E5CB;
+}
+
+#footer-copyright {
+     /* text-align: center; */
+     display: flex;
+     justify-content: center;
 }

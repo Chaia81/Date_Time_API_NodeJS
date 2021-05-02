@@ -11,7 +11,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/frontpage/frontpage.css" type="text/css">
 
-    <title>Home - MyPortfolio</title>
+    <title>Home - My Portfolio</title>
 
 </head>
 <body>
@@ -28,8 +28,8 @@
 
         </nav>
 
-        <div class="container_inner container-sm">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<!--        <div class="container_inner container-sm"> -->
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
                         <img src="/public/nav/MyLogo2.jpeg" alt="" width="70" height="70" class="d-inline-block align-text-inherit">
@@ -54,14 +54,25 @@
                    </div>
                 </div>
             </nav>
-        </div>
+        <!-- </div> -->
+
+
 
         
         <!-------------------- Page content -------------------->
 
-        <div class="container_inner container-sm">
-
+        <div id="main-content" class="container_inner container-sm">
             <h1>Welcome to my portfolio</h1>
+
+            <p>Mit navn er Maria. Jeg læser til datamatiker på 4. semester.
+            </br>
+            Jeg bruger primært min tid på min snart 7-årige datter, men siden 2016 har jeg en gang om ugen brugt min
+            fritid på at synge i kor (Coret), hvor jeg sidste år blev medlem af bestyrelsen – at synge giver mig stor glæde.
+            Jeg elsker også at mødes med familien eller vennerne til en hyggesnak over en kop kaffe eller te. Når Coret
+            eller vennerne ikke tager min tid, slår jeg mig gerne ned enten ved computeren for at kode eller spille World
+            of Warcraft, eller i sofaen med en god bog – gerne en bog om historisk skønlitteratur. Når jeg ellers kan finde
+            tiden til det, bruger jeg den også gerne på at gå på opdagelse i min slægt.
+         </p>
         </div>
 
 
@@ -69,14 +80,16 @@
         <!-------------------- Footer -------------------->
 
 
-        <footer class="footer mt-auto py-3 bg-light">
-            <div class="container">
-                <span>© Maria Wagner - 2021</span>
+        <footer class="footer mt-auto py-3">
+            <div id="footer-copyright" class="container"> <!-- class="container"-->
+                <!-- <span>© Maria Wagner - 2021</span> -->
             </div>
         </footer>
 
+        <script src="/frontpage/frontpage.js"></script>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
+
+        <!-- Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     </div>
