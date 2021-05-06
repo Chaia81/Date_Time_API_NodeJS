@@ -4,28 +4,36 @@ const app = express();
 // I use app.use(express.static("public")); to be able to read the css-file
 app.use(express.static("public"));
 app.use(express.json());
-app.use('/public/nav/', express.static('./public/nav/'));
+app.use('/public/header/', express.static('./public/header/')); // in order to use the picture
+app.use('/public/projects/', express.static('./public/projects/')); // in order to use the picture
 
+const projectsRouter = require("./routes/projects.js");
 
+app.use(projectsRouter.router);
+
+const fs = require("fs");
+
+const header = fs.readFileSync(__dirname + "/public/header/header.html", "utf-8");
+const footer = fs.readFileSync(__dirname + "/public/footer/footer.html", "utf-8");
+
+const frontpage = fs.readFileSync(__dirname + "/public/frontpage/frontpage.html", "utf-8");
+const projectspage = fs.readFileSync(__dirname + "/public/projects/projects.html", "utf-8");
 
 
 /* -------------------- frontpage -------------------- */
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/frontpage/frontpage.html");
+    res.send(header + frontpage + footer);
 });
 
 
-/* Create and serve the projects page with nav and footer */
+/* -------------------- projects page -------------------- */
+
+app.get("/projects", (req, res) => {
+    res.send(header + projectspage + footer);
+});
 
 
-
-
-
-/*
-+--------------------------------------------------------------------------------------------------------------------------------------+
-|                                                            Server start                                                              |
-+--------------------------------------------------------------------------------------------------------------------------------------+
-*/
+/* -------------------- Server start -------------------- */
 
 const server = app.listen(process.env.PORT || 8080, (error) => {
     if (error) {

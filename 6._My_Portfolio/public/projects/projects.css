@@ -1,0 +1,73 @@
+#main-projects-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_inner.container-sm {
+min-height: calc(100vh - 153px);
+}
+
+.project-box {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+    justify-content: center;
+  
+    display: flex; /* so child elements can use flexbox stuff too! */
+}
+
+.image-box {
+    border: 2px solid;
+    width: 50%;
+}
+
+.image-box img {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+
+img .projects.d-inline-block{
+    width: 100%;
+    height: auto;
+}
+
+.project-textbox {
+    border: 2px solid;
+    max-width: 100%;
+}
+
+#projects {
+    padding: 10px 20px;
+}
+
+/*
+.OwnerJoe:before {
+    content: "Joe's Task:";
+  }
+*/
+
+.project-description:before {
+    content: "Description: ";
+    font-weight: bold;
+}
+
+.project-startdate:before {
+    content: "Start date: ";
+    font-weight: bold;
+}
+
+.project-enddate:before {
+    content: "End date: ";
+    font-weight: bold;
+}
+
+.project-languages:before {
+    content: "Languages used: ";
+    font-weight: bold;
+}
+
+.project-gitlink:before {
+    content: "GitHub link: ";
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+nav {
+    background-color: #231F20;
+}
+
+.navbar {
+    /* color: blanchedalmond; */
+    width: 100%;
+    /* display: flexbox; */
+}
+
+.name {
+    font-weight: bolder;
+    font-size: large;
+    color: #C0A45B;
+}
+
+/*
+#navbarNavAltMarkup {
+    display: flex;
+    justify-content: left;
+}
+*/
+
+#navbarNavAltMarkup .navbar-nav .nav-link {
+    color: #E9E9E9;
+    /* color: #A2C4C6; */
+
+}

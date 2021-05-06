@@ -11,56 +11,13 @@ body {
      /*background-color: hotpink; */
 }
 
-/* ---------------------------------- Navigation ---------------------------------- */
-
-nav {
-     background-color: #231F20;
-}
-
-.navbar {
-     /* color: blanchedalmond; */
-     width: 100%;
-     /* display: flexbox; */
-}
-
-.name {
-     font-weight: bolder;
-     font-size: large;
-     color: #C0A45B;
-}
-
-/*
-#navbarNavAltMarkup {
-     display: flex;
-     justify-content: left;
-}
-*/
-
-#navbarNavAltMarkup .navbar-nav .nav-link {
-     color: #E9E9E9;
-     /* color: #A2C4C6; */
-
-}
-
-
 /* --------------------------------- Main content --------------------------------- */
 
 #main-content {
      min-height: calc(100vh - 153px);
 }
 
-
-
-
-
-/* ------------------------------------ Footer ------------------------------------ */
-
-footer.footer {
-     background-color: #E2E5CB;
-}
-
-#footer-copyright {
-     /* text-align: center; */
-     display: flex;
-     justify-content: center;
+h1 {
+     text-align: center;
+     padding-top: 20px;
 }
