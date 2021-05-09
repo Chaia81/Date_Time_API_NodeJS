@@ -1,3 +1,4 @@
+/*
 (async function getEducation() {
     try {
         const response = await fetch("/api/education");
@@ -41,3 +42,4 @@
         console.log(error);
     }
 })();
+*/

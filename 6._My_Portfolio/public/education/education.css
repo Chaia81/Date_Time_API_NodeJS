@@ -1,46 +1,51 @@
-#main-projects-content {
-    display: flex;
-    flex-wrap: wrap;
+:root {
+    --form-label-font-size: 1.2rem;
+/*    --form-input-background-color: #E9E9E9; */
+    --form-input-background-color: hsl( 0, 0%, 91%);
+    --form-input-border-color: hsl(353, 100%, 40%);
+    --form-input-button-color: hsl(43, 44%, 55%);
+    --form-input-button-hover: hsl(43, 44%, 45%);
+    --form-input-border-color-light: hsl( 0, 0%, 91%);
 }
 
-.project-box {
+.container_inner .container-sm {
+    display: flex;   
+}
+
+.card-wrap {
+    margin: 0 5rem;
     padding: 2%;
     flex-grow: 1;
-    flex-basis: 16%;
+    flex-basis: 5%;
     justify-content: center;
+}
+
+.btn {
     display: flex;
+    border: 2px solid var(--form-input-border-color);
+    color: black;
+    background-color: var(--form-input-button-color);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Gotham Rounded';
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-.project-textbox {
-    border: 2px solid;
-    max-width: 100%;
-}
-
-#projects {
-    padding: 10px 20px;
-}
-
-.project-startdate:before {
-    content: "Start date: ";
-    font-weight: bold;
-}
-
-.project-enddate:before {
-    content: "End date: ";
-    font-weight: bold;
-}
-
-.project-education:before {
-    content: "Languages used: ";
-    font-weight: bold;
-}
-
-.project-school:before {
-    content: "School: ";
-    font-weight: bold;
-}
-
-.project-link:before {
-    content: "Link: ";
-    font-weight: bold;
+.btn:hover{
+    display: flex;
+    border: 2px solid var(--form-input-border-color);
+    color: black;
+    background-color: var(--form-input-button-hover);
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Gotham Rounded';
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
