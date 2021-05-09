@@ -3,17 +3,18 @@
     flex-wrap: wrap;
 }
 
+/*
 .container_inner.container-sm {
 min-height: calc(100vh - 153px);
 }
+*/
 
 .project-box {
     padding: 2%;
     flex-grow: 1;
     flex-basis: 16%;
     justify-content: center;
-  
-    display: flex; /* so child elements can use flexbox stuff too! */
+    display: flex;
 }
 
 .image-box {
@@ -25,6 +26,7 @@ min-height: calc(100vh - 153px);
     padding: 5px;
     width: 100%;
     height: auto;
+    margin: auto;
 }
 
 img .projects.d-inline-block{
@@ -40,12 +42,6 @@ img .projects.d-inline-block{
 #projects {
     padding: 10px 20px;
 }
-
-/*
-.OwnerJoe:before {
-    content: "Joe's Task:";
-  }
-*/
 
 .project-description:before {
     content: "Description: ";

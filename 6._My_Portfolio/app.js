@@ -6,10 +6,13 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use('/public/header/', express.static('./public/header/')); // in order to use the picture
 app.use('/public/projects/', express.static('./public/projects/')); // in order to use the picture
+app.use(express.urlencoded({ extended: true }));
 
 const projectsRouter = require("./routes/projects.js");
+const contactRouter = require("./routes/contact.js");
 
 app.use(projectsRouter.router);
+app.use(contactRouter.router);
 
 const fs = require("fs");
 
@@ -18,6 +21,7 @@ const footer = fs.readFileSync(__dirname + "/public/footer/footer.html", "utf-8"
 
 const frontpage = fs.readFileSync(__dirname + "/public/frontpage/frontpage.html", "utf-8");
 const projectspage = fs.readFileSync(__dirname + "/public/projects/projects.html", "utf-8");
+const contactpage = fs.readFileSync(__dirname + "/public/contact/contact.html", "utf-8");
 
 
 /* -------------------- frontpage -------------------- */
@@ -31,6 +35,19 @@ app.get("/", (req, res) => {
 app.get("/projects", (req, res) => {
     res.send(header + projectspage + footer);
 });
+
+
+/* -------------------- contact page -------------------- */
+
+app.get("/contact", (req, res) => {
+    res.send(header + contactpage + footer);
+});
+
+
+
+
+
+
 
 
 /* -------------------- Server start -------------------- */

@@ -22,6 +22,7 @@ const projects = [{
     gitLink: "https://github.com/Chaia81/NodeJs_4_semester/tree/main/6._My_Portfolio"
 }];
 
+
 router.get("/api/projects", (req, res) => {
     res.send({ projects: projects });
 });
