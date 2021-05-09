@@ -12,30 +12,36 @@
         <p>Social Media Widgets</p>
     </div>
     -->
+    <div class="social-media">
+        <!-- Facebook -->
+        <div class="facebook">
+            <a style="color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
+        </div>
+    </div>
 
     <div class="form-wrap">
         <form method="POST" action="/api/contact">
             <div class="form-row">
                 <div class="form-item">
-                    <label>Name</label>
+                    <!-- <label>Name</label> -->
                     <input name="name" placeholder="Name">
                 </div>
                 <div class="form-item">
-                    <label>Email</label>
+                    <!-- <label>Email</label> -->
                     <input name="email" placeholder="Email">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-item">
-                    <label>Subject</label>
+                    <!-- <label>Subject</label> -->
                     <input name="subject" placeholder="Subject">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-item">
-                    <label>Message</label>
+                    <!-- <label>Message</label> -->
                     <textarea name="message" placeholder="Message"></textarea>
                 </div>
             </div>
@@ -46,11 +52,32 @@
         </form>
     </div>
 
-
-
 </div>
 
 <script>
+    $('form').on('submit'), (e) => {
+        e.preventDefault();
+
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const subject = $('#subject').val().trim();
+        const message = $('#message').val().trim();
+
+        const data = {
+            name,
+            email,
+            subject,
+            message
+        };
+
+        $.post('/contact', data, function() {
+            console.log('server received our data');
+        });
+
+    };;
+</script>
+
+<script src="toastr.js">
     // get form data
     // send it with fetch
 
@@ -60,6 +87,37 @@
     }).then(
         // show the user a success message
         toastr.success('Have fun storming the castle!', 'Miracle Max Says')
-    ).catch
+    ).catch(
+
+    )
     // show the user it didn't succeed
+
+
+
+    // Set the options that I want
+
+    toastr.options = {
+        "closeButton": true,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-bottom-center",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+
+    $(document).ready(function onDocumentReady() {
+        setInterval(function doThisEveryTwoSeconds() {
+            toastr.success("Hello World!");
+        }, 2000);   // 2000 is 2 seconds  
+    });
 </script>
+
+<!-- <script src="/contact/contact.js"></script> -->

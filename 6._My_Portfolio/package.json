@@ -23,7 +23,11 @@
     },
     "homepage": "https://github.com/Chaia81/NodeJs_4_semester/blob/main/6._My_Portfolio/README.md",
     "dependencies": {
+        "dotenv": "^9.0.1",
         "express": "^4.17.1",
+        "mailgun-js": "^0.22.0",
+        "nodemailer": "^6.6.0",
+        "nodemailer-mailgun-transport": "^2.0.3",
         "toastr": "^2.1.4"
     }
 }
