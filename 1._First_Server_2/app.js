@@ -9,7 +9,7 @@ const app = express();
 +--------------------------------------------------------------------------------------------------------------------------------------+
 */
 
-// print hour, minutes, seconds
+// print hour and minute
 
 let date = new Date();
 let currentHour = date.getHours();
